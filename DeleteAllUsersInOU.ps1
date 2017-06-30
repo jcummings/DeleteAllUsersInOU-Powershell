@@ -16,7 +16,7 @@ Import-Module ActiveDirectory
 
 #Checking that an OU was supplied as a command line arg
 if($ou -eq $false -OR $ou -eq $null -OR $ou -eq ''){
-    Write-Host "An OU is requried to run this script.  .\RemoveAllUsersinOU.ps1 -ou OU=TestUsers,DC=example,DC=com"
+    Write-Host "An OU is requried to run this script.  .\RemoveAllUsersinOU.ps1 -ou 'OU=TestUsers,DC=example,DC=com'"
     Break
 }
 
